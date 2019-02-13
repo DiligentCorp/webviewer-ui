@@ -37,6 +37,9 @@ class ErrorModal extends React.PureComponent {
 
   onError = error => {
     const { openElement, documentPath, t } = this.props;
+    if (error.type !== "loaderror") {
+      openElement("errorModal");
+    }
 
     openElement('errorModal');
 
