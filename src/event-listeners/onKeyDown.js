@@ -74,15 +74,15 @@ export default store => e => {
     }
   } else {
     if (e.key === 'PageUp' || e.which === 33) { // (PageUp)
-      e.preventDefault();
-      if (core.getCurrentPage() > 1) {
-        core.setCurrentPage(core.getCurrentPage() - 1);
-      }
+      // e.preventDefault();
+      // if (core.getCurrentPage() > 1) {
+      //   core.setCurrentPage(core.getCurrentPage() - 1);
+      // }
     } else if (e.key === 'PageDown' || e.which === 34) { // (PageDown)
-      e.preventDefault();
-      if (core.getCurrentPage() < core.getTotalPages()) {
-        core.setCurrentPage(core.getCurrentPage() + 1);
-      }
+      // e.preventDefault();
+      // if (core.getCurrentPage() < core.getTotalPages()) {
+      //   core.setCurrentPage(core.getCurrentPage() + 1);
+      // }
     } else if (e.key === 'Escape' || e.which === 27) { // (Esc)
       e.preventDefault();
       setToolModeAndGroup(dispatch, 'AnnotationEdit', '');
