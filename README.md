@@ -1,4 +1,15 @@
-# WebViewer UI - v5.1
+# WebViewer UI - v5.2
+=======
+
+## Diligent Install Notes
+
+After making any changes to the viewer code run 
+
+npm run build
+
+Then copy the files from the /build folder to Client/libs/assets/WebViewer.5.2.0-1/lib/ui/build in the Boards Web Repo
+
+## WebViewer UI
 
 WebViewer UI sits on top of [WebViewer](https://www.pdftron.com/webviewer), a powerful JavaScript-based PDF Library that's part of the [PDFTron PDF SDK](https://www.pdftron.com). Built in React, WebViewer UI provides a slick out-of-the-box responsive UI that interacts with the core library to view, annotate and manipulate PDFs that can be embedded into any web project.
 
