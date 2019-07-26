@@ -18,4 +18,5 @@ export default dispatch => (e, annotationList, action) => {
     });
     dispatch(actions.expandNotes(ids));
   }
+  $(document).trigger('annotationSelected', {e, annotationList, action});
 };
