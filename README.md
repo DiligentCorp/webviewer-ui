@@ -1,4 +1,4 @@
-# WebViewer UI - v5.2
+# WebViewer UI - v5.1
 
 =======
 
@@ -8,7 +8,7 @@ After making any changes to the viewer code run
 
 npm run build
 
-Then copy the files from the /build folder to Client/libs/assets/WebViewer.5.2.0-1/lib/ui/build in the Boards Web Repo
+Then copy the files from the /build folder to Client/libs/assets/WebViewer.5.1.10-1/lib/ui/build in the Boards Web Repo
 Increment the '-1' each time new changes are made, and change any references to the web viewer location to point to the new version and delete the old version.
 
 Note: when merging in changes from the official PDFTron webviewer-ui repo you should also update the core version by copying the files from the official version avaliable here:
