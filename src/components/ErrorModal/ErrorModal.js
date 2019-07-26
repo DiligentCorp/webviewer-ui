@@ -27,7 +27,7 @@ class ErrorModal extends React.PureComponent {
 
   componentDidUpdate(prevProps) {
     if (!prevProps.isOpen && this.props.isOpen) {
-      this.props.closeElements([ 'signatureModal', 'printModal', 'loadingModal', 'progressModal' ]);
+      this.props.closeElements(['signatureModal', 'printModal', 'loadingModal', 'progressModal']);
     }
   }
 
@@ -41,10 +41,8 @@ class ErrorModal extends React.PureComponent {
       openElement("errorModal");
     }
 
-    openElement('errorModal');
-
     let errorMessage = '' + (error.detail || error.message);
-    
+
     if (error.type === 'loaderror') {
       if (errorMessage.indexOf('File does not exist') > -1) {
         errorMessage = t('message.notSupported');
