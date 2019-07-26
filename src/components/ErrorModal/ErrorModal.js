@@ -37,9 +37,6 @@ class ErrorModal extends React.PureComponent {
 
   onError = error => {
     const { openElement, documentPath, t } = this.props;
-    if (error.type !== "loaderror") {
-      openElement("errorModal");
-    }
 
     let errorMessage = '' + (error.detail || error.message);
 
@@ -50,9 +47,10 @@ class ErrorModal extends React.PureComponent {
       if (documentPath.indexOf('file:///') > -1) {
         console.error(`WebViewer doesn't have access to file URLs because of browser security restrictions. Please see https://www.pdftron.com/documentation/web/guides/basics/troubleshooting-document-loading#not-allowed-to-load-local-resource:-file:`);
       }
+    } else {
+      openElement("errorModal");
+      this.props.setErrorMessage(errorMessage);
     }
-
-    this.props.setErrorMessage(errorMessage);
   }
 
   render() {
