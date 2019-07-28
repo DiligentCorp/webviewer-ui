@@ -1,5 +1,4 @@
 @import '../../constants/styles';
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .ZoomOverlay {
   position: absolute;
@@ -19,7 +18,7 @@
     background: #F0F0F0;
     background: var(--button-active-color);
   }
-  
+
   .ToolButton {
     background-color: #FFFFFF;
     background-color: var(--primary-color);
