@@ -5,13 +5,13 @@ const loadScript = (scriptSrc, warning) => {
     if (!scriptSrc) {
       return resolve();
     }
-  
+
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.onload = function() {
+    script.onload = function () {
       resolve();
     };
-    script.onerror = function() {
+    script.onerror = function () {
       if (warning) {
         console.warn(warning);
       }
@@ -26,20 +26,20 @@ const loadScript = (scriptSrc, warning) => {
 // in development mode this method will instead try finding the URL in the query parameters only for debugging purposes
 // ignore subsequent messages after successfully loads a config file
 const loadConfig = () => {
-  const _loadConfig = (e, resolve) => {
-    if (e.data.type === 'responseConfig') {
-      loadScript(
-        e.data.value,
-        'Config script could not be loaded'
-      ).then(() => {
-        window.removeEventListener('message', _loadConfig);
-        resolve();
-      });
-    }
-  };
-
   return new Promise(resolve => {
-    window.addEventListener('message', e => _loadConfig(e, resolve));
+    const _loadConfig = (e) => {
+      if (e.data.type === 'responseConfig') {
+        loadScript(
+          e.data.value,
+          'Config script could not be loaded'
+        ).then(() => {
+          window.removeEventListener('message', _loadConfig);
+          resolve();
+        });
+      }
+    };
+
+    window.addEventListener('message', _loadConfig);
 
     if (process.env.NODE_ENV === 'development') {
       loadScript(getHashParams('config', '')).then(() => {
