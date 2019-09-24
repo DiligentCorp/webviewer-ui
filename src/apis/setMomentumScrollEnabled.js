@@ -1,7 +1,7 @@
 /**
  * Diligent
  * 
- * Enable or disable momentum scrolling of documens.
+ * Enable or disable momentum scrolling of documents.
  * @method WebViewer#setMomentumScrollEnabled
  * @param {boolean} momentumScrollEnabled enable or disable momentum scrolling via API
  * @example // 5.1 and after
