@@ -252,6 +252,7 @@ if (window.CanvasRenderingContext2D) {
           setNoteDateFormat: apis.setNoteDateFormat(store),
           setNotesPanelSort: apis.setNotesPanelSort(store), // undocumented
           setMeasurementUnits: apis.setMeasurementUnits(store),
+          setMomentumScrollEnabled: apis.setMomentumScrollEnabled, // Diligent
           setPageLabels: apis.setPageLabels(store),
           setPrintQuality: apis.setPrintQuality(store),
           setReadOnly: apis.setReadOnly,
@@ -272,7 +273,6 @@ if (window.CanvasRenderingContext2D) {
           updateOutlines: apis.updateOutlines(store), // undocumented
           updateTool: apis.updateTool(store),
           useEmbeddedPrint: apis.useEmbeddedPrint(store),
-          setMomentumScrollEnabled: apis.setMomentumScrollEnabled,
         };
 
         window.ControlUtils = {

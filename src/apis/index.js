@@ -108,7 +108,6 @@ import setMeasurementUnits from './setMeasurementUnits';
 import setMomentumScrollEnabled from './setMomentumScrollEnabled';
 
 export default {
-  setMomentumScrollEnabled,
   addSearchListener,
   addSortStrategy,
   closeDocument,
@@ -193,6 +192,7 @@ export default {
   setLayoutMode,
   setMaxZoomLevel,
   setMinZoomLevel,
+  setMomentumScrollEnabled, // Diligent
   setNoteDateFormat,
   setNotesPanelSort,
   setPageLabels,
