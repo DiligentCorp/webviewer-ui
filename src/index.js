@@ -272,6 +272,7 @@ if (window.CanvasRenderingContext2D) {
           updateOutlines: apis.updateOutlines(store), // undocumented
           updateTool: apis.updateTool(store),
           useEmbeddedPrint: apis.useEmbeddedPrint(store),
+          setMomentumScrollEnabled: apis.setMomentumScrollEnabled,
         };
 
         window.ControlUtils = {

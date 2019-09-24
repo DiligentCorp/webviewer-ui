@@ -105,8 +105,10 @@ import updateOutlines from './updateOutlines';
 import updateTool from './updateTool';
 import useEmbeddedPrint from './useEmbeddedPrint';
 import setMeasurementUnits from './setMeasurementUnits';
+import setMomentumScrollEnabled from './setMomentumScrollEnabled';
 
 export default {
+  setMomentumScrollEnabled,
   addSearchListener,
   addSortStrategy,
   closeDocument,
