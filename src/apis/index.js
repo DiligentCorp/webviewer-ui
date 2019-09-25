@@ -105,7 +105,7 @@ import updateOutlines from './updateOutlines';
 import updateTool from './updateTool';
 import useEmbeddedPrint from './useEmbeddedPrint';
 import setMeasurementUnits from './setMeasurementUnits';
-import setMomentumScrollEnabled from './setMomentumScrollEnabled';
+import enableMomentumScroll from './enableMomentumScroll';
 
 export default {
   addSearchListener,
@@ -135,6 +135,7 @@ export default {
   enableFilePicker,
   enableLocalStorage,
   enableMeasurement,
+  enableMomentumScroll, // Diligent
   enableNotesPanel,
   enablePrint,
   enableRedaction,
@@ -192,7 +193,6 @@ export default {
   setLayoutMode,
   setMaxZoomLevel,
   setMinZoomLevel,
-  setMomentumScrollEnabled, // Diligent
   setNoteDateFormat,
   setNotesPanelSort,
   setPageLabels,

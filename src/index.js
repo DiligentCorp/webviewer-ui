@@ -193,6 +193,7 @@ if (window.CanvasRenderingContext2D) {
           enableFilePicker: apis.enableFilePicker(store),
           enableLocalStorage: apis.enableLocalStorage,
           enableMeasurement: apis.enableMeasurement(store),
+          enableMomentumScroll: apis.enableMomentumScroll, // Diligent
           enableNotesPanel: apis.enableNotesPanel(store),
           enablePrint: apis.enablePrint(store),
           enableRedaction: apis.enableRedaction(store),
@@ -252,7 +253,6 @@ if (window.CanvasRenderingContext2D) {
           setNoteDateFormat: apis.setNoteDateFormat(store),
           setNotesPanelSort: apis.setNotesPanelSort(store), // undocumented
           setMeasurementUnits: apis.setMeasurementUnits(store),
-          setMomentumScrollEnabled: apis.setMomentumScrollEnabled, // Diligent
           setPageLabels: apis.setPageLabels(store),
           setPrintQuality: apis.setPrintQuality(store),
           setReadOnly: apis.setReadOnly,
