@@ -105,6 +105,7 @@ import updateOutlines from './updateOutlines';
 import updateTool from './updateTool';
 import useEmbeddedPrint from './useEmbeddedPrint';
 import setMeasurementUnits from './setMeasurementUnits';
+import enableMomentumScroll from './enableMomentumScroll';
 
 export default {
   addSearchListener,
@@ -134,6 +135,7 @@ export default {
   enableFilePicker,
   enableLocalStorage,
   enableMeasurement,
+  enableMomentumScroll, // Diligent
   enableNotesPanel,
   enablePrint,
   enableRedaction,

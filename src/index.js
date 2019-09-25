@@ -193,6 +193,7 @@ if (window.CanvasRenderingContext2D) {
           enableFilePicker: apis.enableFilePicker(store),
           enableLocalStorage: apis.enableLocalStorage,
           enableMeasurement: apis.enableMeasurement(store),
+          enableMomentumScroll: apis.enableMomentumScroll, // Diligent
           enableNotesPanel: apis.enableNotesPanel(store),
           enablePrint: apis.enablePrint(store),
           enableRedaction: apis.enableRedaction(store),
