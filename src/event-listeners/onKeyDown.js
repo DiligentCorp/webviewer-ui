@@ -9,7 +9,7 @@ import actions from 'actions';
 import selectors from 'selectors'; 
 
 export default store => e => {
-  const { dispatch, getState } = store;
+  /* const { dispatch, getState } = store;
   const state = getState();
   const selectedTextFromCanvas = core.getSelectedText();
   const selectedTextFromDOM = window.getSelection().toString();
@@ -138,5 +138,5 @@ export default store => e => {
         createTextAnnotationAndSelect(dispatch, window.Annotations.TextUnderlineAnnotation);
       }
     } 
-  }
+  } */
 };
