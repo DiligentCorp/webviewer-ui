@@ -105,6 +105,7 @@ import setSideWindowVisibility from './setSideWindowVisibility';
 import setSortNotesBy from './setSortNotesBy';
 import setSortStrategy from './setSortStrategy';
 import setSwipeOrientation from './setSwipeOrientation';
+import enableMomentumScroll from './enableMomentumScroll';
 import setTheme from './setTheme';
 import setToolMode from './setToolMode';
 import setZoomLevel from './setZoomLevel';
@@ -178,6 +179,7 @@ export default store => {
     setPrintQuality: setPrintQuality(store),
     setSortStrategy: setSortStrategy(store),
     setSwipeOrientation,
+    enableMomentumScroll,
     setTheme,
     setToolMode: setToolMode(store),
     setZoomLevel,
