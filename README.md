@@ -23,6 +23,10 @@ Also ensure that the the fonts in boards-web/Client/libs/assets/pdf-fonts are up
 - ErrorModal.js - disable pdftron error reporting to hide the 'network error' message that can display in book-admin due to pdf caching issues
 - TouchEventManager.js & enableMomentumScroll.js - add an 'enableMomentumScroll' method so that swipe navigation in director-web doesn't scroll the page navigated to
 
+## Patching new Webviewer versions
+
+I'd recommend that you don't merge this branch into new webviewer branches, because when I tried to merge the 5.x branch into the 6.x branch it broke the pdftron build completely; instead I'd recommend you cherry pick any diligent patches to the new webviewer version (and test each of the diligent patches still function)
+
 # WebViewer UI - v6.0
 
 WebViewer UI sits on top of [WebViewer](https://www.pdftron.com/webviewer), a powerful JavaScript-based PDF Library that's part of the [PDFTron PDF SDK](https://www.pdftron.com). Built in React, WebViewer UI provides a slick out-of-the-box responsive UI that interacts with the core library to view, annotate and manipulate PDFs that can be embedded into any web project.
